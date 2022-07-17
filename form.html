@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/page.css">
+</head>
+
+<body>
+    <header>
+        <nav class="header-nav">
+            <h1><a href="/index.html">Clothes Basic</a></h1>
+        </nav>
+    </header>
+    <div class="container">
+        <form action="/">
+            <div class="title">
+                <i class="fas fa-pencil-alt"></i>
+                <h2>Input here</h2>
+            </div>
+        </form>
+    </div>
+    <div class="main-right__heading">
+        <span class="main-right__title" hidden></span>
+    </div>
+    <form action="" id="form">
+        <div class="info">
+            <input type="text" name="product_code" class="form-control" value="" hidden>
+            <p class="title-form">Name Product :</p>
+            <input type="text" name="name" class="form-control" value="" placeholder="Name Product">
+            <p class="title-form">Description :</p>
+            <textarea name="description" class="form-control" id="" cols="30" rows="10"></textarea>
+            <p class="title-form">Price :</p>
+            <input type="number" name="price" class="form-control" value="" placeholder="Price">
+            <select name="brand" class="form-control" hidden>
+                <option value="">-- Chọn hãng --</option>
+                <option value="1">Acer</option>
+                <option value="2">Apple</option>
+                <option value="3">Asus</option>
+                <option value="4">Dell</option>
+                <option value="5">Hp</option>
+                <option value="7">LG</option>
+                <option value="8">Philips</option>
+                <option value="9">Msi</option>
+                <option value="10">Lenovo</option>
+            </select>
+            <button type="submit" class="btn btn-submit">Create</button>
+        </div>
+        <script src="./js/general.js"></script>
+        <script src="./js/form.js"></script>
+</body>
+
+</html>
